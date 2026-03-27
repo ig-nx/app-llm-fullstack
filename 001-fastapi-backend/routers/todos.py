@@ -4,6 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 import schemas
 import crud
 from database import SessionLocal
+from typing import Optional
 
 router = APIRouter(
     prefix="/todos"
@@ -22,7 +23,7 @@ def create_todo(todo: schemas.ToDoRequest, db: Session = Depends(get_db)):
     return todo
 
 @router.get("", response_model=List[schemas.ToDoResponse])
-def get_todos(completed: bool = None, db: Session = Depends(get_db)):
+def get_todos(completed: Optional[bool] = None, db: Session = Depends(get_db)):
     todos = crud.read_todos(db, completed)
     return todos
 
