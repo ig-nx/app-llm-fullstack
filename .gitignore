@@ -1,0 +1,75 @@
+# ======================
+# GENERAL
+# ======================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# ======================
+# ENV VARIABLES
+# ======================
+.env
+.env.*
+!.env.example
+
+# ======================
+# PYTHON (FASTAPI)
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Distribución / builds
+build/
+dist/
+*.egg-info/
+
+# Cache tools
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# ======================
+# NODE / NEXT.JS
+# ======================
+node_modules/
+.next/
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ======================
+# VERCEL
+# ======================
+.vercel/
+
+# ======================
+# IDE / EDITOR
+# ======================
+.vscode/
+.idea/
+*.swp
+
+# ======================
+# OS / WINDOWS PATH ISSUES
+# ======================
+*.pyc
+*.pyo
+
+# ======================
+# OPTIONAL (DATA / FILES)
+# ======================
+*.sqlite3
+*.db
