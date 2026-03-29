@@ -2,6 +2,15 @@
 
 Aplicación full stack para la gestión de tareas (ToDo), construida con FastAPI en el backend y Next.js en el frontend. Incluye persistencia en PostgreSQL desplegado en Render y frontend en Vercel.
 
+Aplicación en producción:  
+https://app-llm-fullstack.vercel.app/
+
+Documentación de la API (Swagger):  
+https://app-llm-fullstack.onrender.com/docs
+
+Prueba directa del backend:  
+https://app-llm-fullstack.onrender.com/
+
 ---
 
 ## Arquitectura del Proyecto
@@ -123,9 +132,9 @@ uvicorn main:app --host 0.0.0.0 --port 10000
 
 ### Base de Datos (Render)
 
-- Crear PostgreSQL  
-- Copiar Internal Database URL  
-- Usar en DATABASE_URL  
+- Crear instancia PostgreSQL  
+- Copiar la Internal Database URL  
+- Configurar en DATABASE_URL  
 
 ---
 
@@ -148,3 +157,10 @@ NEXT_PUBLIC_API_URL
 
 ---
 
+## Créditos
+
+Este proyecto fue desarrollado como parte del curso:
+
+https://www.udemy.com/course/bootcamp-ia-generativa-y-aplicaciones-llm
+
+Todos los créditos corresponden al instructor del curso.
