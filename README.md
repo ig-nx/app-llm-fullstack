@@ -1,4 +1,4 @@
-# Full Stack ToDo App (FastAPI + Next.js)
+# Full Stack ToDo App (FastAPI + Next.js) - Backend
 
 Aplicación full stack para la gestión de tareas (ToDo), construida con FastAPI en el backend y Next.js en el frontend. Incluye persistencia en PostgreSQL desplegado en Render y frontend en Vercel.
 
